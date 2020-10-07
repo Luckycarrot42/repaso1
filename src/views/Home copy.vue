@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <v-row>
-      <v-col v-for="(curso, index) in cursos" :key="index">
+      <v-col v-for="(curso, id) in cursos" :key="id">
         <v-card
           class="mx-auto"
           max-width="344"
@@ -11,8 +11,8 @@
             height="200px"
           ></v-img>
 
-          <v-card-title>{{ curso.title }}</v-card-title>
-          <v-card-subtitle> {{ curso.description }}</v-card-subtitle>
+          <v-card-title>{{ example.title }}</v-card-title>
+          <v-card-subtitle> {{ example.description }}</v-card-subtitle>
 
           <v-card-actions>
             <v-btn
